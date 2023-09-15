@@ -13,5 +13,6 @@ If the project doesn't build like that you are most likely missing some external
 
 
 ## Organaisation
-Unfortunately the implemantion had to happen in the hpp-files as the data structures are generic
+The implemantion had to happen in the hpp-files as the data structures are generic
 
+Unfortunetly the class comments are still in German as this is a university project
