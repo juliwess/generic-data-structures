@@ -1,19 +1,17 @@
 # Projekt Alpha
 
-## Projekt bauen
-Um das Projekt zu bauen, soll einer der folgenden Befehlsketten im Projektverzeichnis ausgeführt werden.
-In Linux Mint verwendet man
+## Building the project
+The build system provided for this projecdt is cmake
+You can use the following command to create the build-folder and some
+executable test files
 ```
 cmake -S . -B build && cmake --build build
 ```
-Auf den Rechnern der CIP Pools ist der Aufruf leider ein wenig länger
-```
-export PROJ_PATH=`pwd` && cmake -S $PROJ_PATH -B $PROJ_PATH/build && cmake --build $PROJ_PATH/build
-```
-Falls das Projekt so nicht baut, liegen entweder Implementierungsfehler vor oder es fehlen externe Softwarepakete.
 
 
-## Wo finde ich Was?
-Die Interfaces für die Datenstrukturen findet man in include/Interfaces.hpp. Dort sind alle Interfaces nacheinander deklariert.
+If the project doesn't build like that you are most likely missing some external packages. However you should be able to import and use the classes after cloning the project
 
-Alle konkreten Implementationen der Interfaces findet man ebenfalls in include/ und jeweils gefolgt vom Datenstrukturnamen.
+
+## Organaisation
+Unfortunately the implemantion had to happen in the hpp-files as the data structures are generic
+
